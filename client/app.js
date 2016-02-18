@@ -1,3 +1,10 @@
+// if Server
+if (window.location.href.indexOf("stdy.space") > -1) {
+  Meteor.absoluteUrl.defaultOptions.rootUrl = "http://stdy.space";
+} else {
+  Meteor.absoluteUrl.defaultOptions.rootUrl = "http://localhost:3000";
+}
+
 //temporary
 Meteor.subscribe('profile');
 SimpleSchema.debug = true

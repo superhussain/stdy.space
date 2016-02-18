@@ -1,10 +1,6 @@
 Meteor.startup(function() {
 
-if (window.location.href.indexOf("stdy.space") > -1) {
-  Meteor.absoluteUrl.defaultOptions.rootUrl = "http://stdy.space";  
-} else {
-  Meteor.absoluteUrl.defaultOptions.rootUrl = "http://localhost:3000";
-}
+  Meteor.absoluteUrl.defaultOptions.rootUrl = "http://stdy.space";
 
   Meteor.users.remove({});
   Accounts.createUser({
