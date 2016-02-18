@@ -73,7 +73,7 @@ html {
   position: relative;
   height: 100%;
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* line 16, ../tests/sass/_layout.scss */
@@ -140,6 +140,7 @@ body {
   font-weight: 900;
   line-height: 53px;
   cursor: pointer;
+  font-family: "Roboto Slab"
 }
 
 /* line 29, ../tests/sass/components/_header.scss */
@@ -295,6 +296,7 @@ body {
   margin-left: 0;
   font-style: normal;
   text-decoration: none;
+  font-family: "Roboto Slab"
 }
 
 /* line 31, ../tests/sass/components/_message.scss */
@@ -359,6 +361,7 @@ body {
   font-weight: 900;
   line-height: 1.5rem;
   margin-top: .2rem;
+  font-family: "Roboto Slab"
 }
 
 /* line 38, ../tests/sass/components/_user-menu.scss */
@@ -409,6 +412,7 @@ body {
 .course_name {
   text-decoration: none;
   color: inherit;
+  font-family: "Roboto Slab"
 }
 .spacer {
   padding: 1px;
@@ -470,6 +474,10 @@ html body input[disabled] {
 #login-buttons a, .accounts-dialog a {
   color: #049372;
   text-decoration: none;
+}
+
+.logo {
+  width: 165px;
 }
 
 @media (max-width:560px) {
