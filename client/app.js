@@ -120,3 +120,16 @@ Template.drop.events({
     $('.upload-bar').slideToggle(500);
   }
 });
+
+
+(function ($) {
+  jQuery(document).ready(function ($) {
+    mobile();
+  });
+})(jQuery);
+
+var mobile = function() {
+  if ($('body').width() < 560) {
+    $('.course-menu').prepend('<img src="hamburger.png" class="hamburger">')
+  }
+}

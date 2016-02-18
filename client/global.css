@@ -100,6 +100,7 @@ body {
 
 .main {
   height: 100%;
+  background-color: #fff;
 }
 
 /* line 35, ../tests/sass/_layout.scss */
@@ -110,6 +111,7 @@ body {
   bottom: 0;
   height: 64px;
   width: 100%;
+  padding: 0.8em 0;
 }
 
 /* line 1, ../tests/sass/components/_header.scss */
@@ -122,8 +124,8 @@ body {
   font-weight: 900;
   padding: 0 1rem;
   color: #ffffff;
-  background: #3e313c;
-  border-bottom: 2px solid #372c36;
+  background: #1E824C;
+  border-bottom: 2px solid #049372;
   float: left;
   cursor: pointer;
 }
@@ -154,10 +156,18 @@ body {
   height: 100%;
   width: 220px;
   float: left;
-  color: #ab9ba9;
-  background-color: #4d394b;
+  color: #eee;
+  background-color: #3FC380;
   overflow-y: auto;
   overflow-x: hidden;
+}
+.listings a {
+  color: #fff;
+  text-decoration: none;
+}
+.listings a:hover {
+  color: #C8F7C5;
+  text-decoration: none;
 }
 
 /* line 11, ../tests/sass/components/_main.scss */
@@ -185,7 +195,7 @@ body {
   margin: 0 1rem .1rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ab9ba9;
+  color: #eee;
   width: 165px;
   position: relative;
 }
@@ -217,8 +227,8 @@ body {
 /* line 35, ../tests/sass/components/_listings.scss */
 
 .unread {
-  color: #ffffff;
-  background: #eb4d5c;
+  color: #888;
+  background: #fff;
   border-radius: 9px;
   padding: 2px 9px;
   font-size: .8rem;
@@ -319,8 +329,8 @@ body {
   width: 220px;
   height: 100%;
   cursor: pointer;
-  background: #3e313c;
-  border-top: 2px solid #372c36;
+  background: #1E824C;
+  border-top: 2px solid #049372;
   padding: 7px 0 9px 8px;
   height: 4rem;
   position: fixed;
@@ -361,7 +371,7 @@ body {
 /* line 43, ../tests/sass/components/_user-menu.scss */
 
 .connection_status {
-  color: #ab9ba9;
+  color: #eee;
 }
 
 /* line 1, ../tests/sass/components/_input-box.scss */
@@ -455,4 +465,35 @@ body {
 }
 html body input[disabled] {
   cursor: not-allowed;
+}
+
+#login-buttons a, .accounts-dialog a {
+  color: #049372;
+  text-decoration: none;
+}
+
+@media (max-width:560px) {
+  .team-menu {
+    display: none;
+  }
+  .listings {
+    display: none;
+  }
+  .user-menu {
+    display: none;
+  }
+  .message-history {
+    margin-left: 0;
+  }
+  .input-box {
+    margin-left: 0;
+  }
+  .course-menu {
+    display: flex;
+  }
+  .hamburger {
+    width: 50px;
+    height: 30px;
+    margin: 11px 5px;
+  }
 }
