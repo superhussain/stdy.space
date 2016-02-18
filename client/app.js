@@ -1,3 +1,7 @@
+//temporary
+Meteor.subscribe('profile');
+SimpleSchema.debug = true
+
 Template.messages.onCreated(function() {
   var self = this;
   self.autorun(function() {
@@ -63,4 +67,18 @@ Template.course.events({
     'click .course': function (e) {
         Session.set('course', this.name);
     }
+});
+
+
+Template.Profile.helpers({
+  users: function () {
+    return Meteor.users;
+  },
+  userSchema: function () {
+    return Schema.User;
+  },
+  profile: function () {
+    if (Meteor.user())
+      return Meteor.user()
+  }
 });

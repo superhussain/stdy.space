@@ -32,3 +32,9 @@ accounts-twitter
 accounts-google
 email
 iron:router
+
+aldeed:collection2
+aldeed:autoform
+
+twbs:bootstrap
+fortawesome:fontawesome
