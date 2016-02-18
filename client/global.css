@@ -338,8 +338,6 @@ body {
   border-radius: 0.2rem;
   width: 48px;
   height: 48px;
-  background-image: url("http://i.imgur.com/LikUNLc.png");
-  background-size: cover;
   margin-right: 8px;
 }
 
@@ -410,38 +408,33 @@ body {
   top: 18px;
   left: 400px;
 }
-
-<<<<<<< HEAD
 .jqDropZone {
-    background: lightgrey;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-weight: bold;
+  background: lightgrey;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
 }
 .jqDropZone.in {
-    width: 1000px;
-    height: 200px;
-    line-height: 200px;
-    font-size: larger;
+  width: 1000px;
+  height: 200px;
+  line-height: 200px;
+  font-size: larger;
 }
 .jqDropZone.hover {
-    background: lawngreen;
+  background: lawngreen;
 }
 .jqDropZone.fade {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    opacity: 1;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 1;
 }
-
-=======
 .profile-button {
   position: absolute;
   top: 10px;
   right: 20px;
 }
->>>>>>> a87893d4396c5e7710565d6b6e227c64d4712887

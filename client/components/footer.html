@@ -2,7 +2,7 @@
 	<div class="footer">
 		<div class="user-menu">
 			{{#if currentUser}}
-				<span class="user-menu_profile-pic"></span>
+				<img src="{{currentUser.profile.photoUrl}}" class="user-menu_profile-pic">
 			{{/if}}
 			<span class="user-menu_username">
 				{{#if currentUser}}
