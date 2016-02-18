@@ -32,3 +32,9 @@ accounts-twitter
 accounts-google
 email
 iron:router
+cfs:standard-packages
+cfs:filesystem
+cfs:s3
+cfs:gridfs
+tomi:upload-server
+tomi:upload-jquery

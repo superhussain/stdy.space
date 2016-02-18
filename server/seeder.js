@@ -50,4 +50,14 @@ Meteor.startup(function() {
   Courses.insert({
     name: "EECS1030"
   });
+
+  // Upload to Server
+
+  UploadServer.init({
+    tmpDir: process.env.PWD + '/public/tmp',
+    uploadDir: process.env.PWD + '/public/',
+    checkCreateDirectories: true
+  });
+
+
 });
