@@ -454,11 +454,11 @@ body {
 }
 .btn-upload {
   position: absolute;
-  bottom: 18px;
+  bottom: 7px;
   right: 20px;
   padding: 14px;
   width: 7%;
-  display: none;
+  /*display: none;*/
 }
 .upload-bar {
   position: absolute;
