@@ -14,3 +14,8 @@ Meteor.publish("allUsernames", function () {
     "services.google.username": 1
   }});
 });
+
+//temporary
+Meteor.publish('profile', function() {
+  return Meteor.users.find();
+});

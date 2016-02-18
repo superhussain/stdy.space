@@ -32,9 +32,12 @@ accounts-twitter
 accounts-google
 email
 iron:router
-cfs:standard-packages
-cfs:filesystem
-cfs:s3
-cfs:gridfs
+
+aldeed:collection2
+aldeed:autoform
+
+twbs:bootstrap
+fortawesome:fontawesome
+
 tomi:upload-server
 tomi:upload-jquery

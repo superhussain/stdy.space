@@ -411,6 +411,7 @@ body {
   left: 400px;
 }
 
+<<<<<<< HEAD
 .jqDropZone {
     background: lightgrey;
     width: 100%;
@@ -437,3 +438,10 @@ body {
     opacity: 1;
 }
 
+=======
+.profile-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+>>>>>>> a87893d4396c5e7710565d6b6e227c64d4712887
