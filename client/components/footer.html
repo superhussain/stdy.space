@@ -23,9 +23,13 @@
       </span>
 		</div>
 		<div class="input-box">
-			<input type="text" class="input-box_text">
-			<div>{{> dropzone }}</div>
+			{{#if currentUser}}
+				<input type="text" class="input-box_text" placeholder="What's on the test?">
+			{{else}}
+				<input type="text" class="input-box_text" disabled="true" placeholder="Please login to message.">
+			{{/if}}
 		</div>
+    {{> drop}}
 	</div>
 	<div class="login-menu">
 		{{> loginButtons}}

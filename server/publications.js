@@ -6,6 +6,10 @@ Meteor.publish('courses', function () {
 	return Courses.find();
 });
 
+Meteor.publish('images', function () {
+	return Images.find();
+});
+
 Meteor.publish("allUsernames", function () {
   return Meteor.users.find({}, {fields: {
   	"username": 1,

@@ -46,6 +46,13 @@ Template.registerHelper("usernameFromId", function(userId) {
   return user.username;
 });
 
+Template.registerHelper("userPhoto", function(userId) {
+  var user = Meteor.users.findOne({
+    _id: userId
+  });
+  return user.profile.photoUrl;
+});
+
 Template.listings.helpers({
   courses: function() {
     return Courses.find();
@@ -82,5 +89,11 @@ Template.Profile.helpers({
   profile: function() {
     if (Meteor.user())
       return Meteor.user()
+  }
+});
+
+Template.drop.events({
+  'click .btn-upload': function(e) {
+    $('.upload-bar').slideToggle(500);
   }
 });
