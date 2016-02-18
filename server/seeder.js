@@ -1,5 +1,7 @@
 Meteor.startup(function() {
 
+  Meteor.absoluteUrl.defaultOptions.rootUrl = "http://stdy.space";  
+
   Meteor.users.remove({});
   Accounts.createUser({
     username: "admin",
