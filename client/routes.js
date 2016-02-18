@@ -8,5 +8,5 @@ Router.route('/:course', function () {
 });
 
 Router.route('/', function () {
-	this.redirect('/general');
+	this.redirect('/EECS1001');
 });
