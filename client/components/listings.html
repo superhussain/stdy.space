@@ -1,0 +1,14 @@
+<template name="listings">
+	<div class="listings">
+		<div class="listings_courses">
+			<h2 class="listings_header">Courses</h2>
+			<ul class="course_list">
+				{{#each courses}}
+					{{> course name=name}}
+				{{/each}}
+			</ul>
+
+		</div>
+		<div class="listings_direct-messages"></div>
+	</div>
+</template>

@@ -1,0 +1,15 @@
+<template name="course">
+	<li class="course {{active}}">
+		<a class="course_name" href="/{{name}}">
+			{{#if active }}
+				<span class="unread">
+					{{messageCount}}
+				</span>
+			{{/if}}
+			<span>
+				<span class="prefix">#</span>
+				<span class="course-name">{{name}}</span>
+			</span>
+		</a>
+	</li>
+</template>
