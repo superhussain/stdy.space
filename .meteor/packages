@@ -27,9 +27,9 @@ meteortoys:allthings
 accounts-base
 accounts-password
 accounts-ui
-accounts-facebook
-accounts-twitter
-accounts-google
+#accounts-facebook
+#accounts-twitter
+#accounts-google
 email
 iron:router
 
