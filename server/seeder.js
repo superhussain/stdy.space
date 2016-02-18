@@ -56,10 +56,9 @@ Meteor.startup(function() {
   // Upload to Server
 
   UploadServer.init({
-    tmpDir: process.env.PWD + '/public/tmp',
-    uploadDir: process.env.PWD + '/public/uploads',
+    tmpDir: process.cwd() + '/../../../../../public/uploads/tmp',
+    uploadDir: process.cwd() + '/../../../../../public/uploads/',
     checkCreateDirectories: true
   });
-
 
 });

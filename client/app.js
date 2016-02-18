@@ -99,6 +99,22 @@ Template.Profile.helpers({
   }
 });
 
+Template.drop.helpers({
+  postImg: function() {
+    return {
+        finished: function(index, fileInfo, context) {
+          Meteor.call('newUpload', {
+            img: fileInfo,
+            course: Session.get('course')
+          });
+          console.log(index);
+          console.log(fileInfo);
+          console.log(context);
+        }
+    }
+  }
+});
+
 Template.drop.events({
   'click .btn-upload': function(e) {
     $('.upload-bar').slideToggle(500);

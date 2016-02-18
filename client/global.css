@@ -444,6 +444,7 @@ body {
   right: 20px;
   padding: 14px;
   width: 7%;
+  display: none;
 }
 .upload-bar {
   position: absolute;

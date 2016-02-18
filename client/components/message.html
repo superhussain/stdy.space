@@ -4,6 +4,13 @@
 		<a href="" class="message_username">{{usernameFromId user}}</a>
 		<span class="message_timestamp">{{timestampToTime timestamp}}</span>
 		<span class="message_star"></span>
-		<span class="message_content">{{text}}</span>
+		<span class="message_content">
+      {{#if text}}
+        {{text}}
+      {{/if}}
+      {{#if img}}
+        <img src="{{img.url}}" class="img-message">
+      {{/if}}
+    </span>
 	</div>
 </template>

@@ -2,6 +2,10 @@ Meteor.publish('messages', function (course) {
 	return Messages.find({course: course});
 });
 
+Meteor.publish('uploads', function (course) {
+	return Uploads.find({course: course});
+});
+
 Meteor.publish('courses', function () {
 	return Courses.find();
 });
